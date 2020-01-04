@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -74,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
                          ),
                   back: Container(
                            child:Center(
-                            child: Text('Mango',textAlign: TextAlign.center,
+                            child: Text('Apple',textAlign: TextAlign.center,
                             style: TextStyle(fontWeight:FontWeight.bold,fontSize: 20.0),),
                            ),
                        ),

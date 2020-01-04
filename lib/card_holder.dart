@@ -27,14 +27,15 @@ Container MyFruits(String imageValue,String friutName){
     return MaterialApp(
 
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(primaryColor: Colors.pink
-      ),
         home: Scaffold(
-         
-            body: Container(
+                       
+            body:  ListView(
+              padding: EdgeInsets.all(10.0),
+              children:<Widget>[
+              Container(
+                alignment: Alignment.topCenter,
               margin: EdgeInsets.symmetric(vertical: 20.0),
-              height: 90,
+              height: 700,
               child: Wrap(
                 runSpacing: 2.0,
                 spacing: 4.0,
@@ -51,7 +52,9 @@ Container MyFruits(String imageValue,String friutName){
             ),
 
           
-
+              ]
+        
+          ),
           ),
         );        
     
